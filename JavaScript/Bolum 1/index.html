@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+
+<script>
+   // alert("Merhaba bu bizim ilk Js dersimiz (Slaaaaay)");
+/*    var message =  prompt("Lütfen bir isim giriniz : ")
+   alert("Merhaba "+ message)*/
+/*
+   console.log("Merhabalar ben bu yerlerden biriyim.")*/
+
+ /*  let  name = "Buse Doğan";
+   name = 25
+
+   const  email = "busedoan@gmail.com"
+   email = "Selam";*/
+
+/*
+   const toplam = 25 + 37;
+   console.log(toplam);*/
+
+  // console.log(25==="25");
+
+
+   // Kullanıcıdan ürün ismi , fiyat ve miktar değerini alalım
+   // toplam ürün fiyatı : 2000 den fazla ise %20 indirim uygulasın
+   // toplam ürün fiyatı : 1000 den fazla ise %10 indirim uygulasın
+   // toplam ücret , indirim oranı,  indirimli fiyatı, indirimsiz olan fiyattan indirimli fiyat farkını gösteriniz.
+
+   const  productName = prompt("Lütfen ürün ismini giriniz: ")
+   const  productPrice = Number(prompt("Lütfen Ürün Fiyatını giriniz: "))
+   const  productCount = Number(prompt("Lütfen ürün miktarını giriniz: "))
+
+   let  indirimOrani = 0
+   let indirimliFiyat = 0
+   let indimFarki = 0
+
+
+   const  totalPrice = productPrice * productCount + productName
+
+   if (totalPrice>=1000  && totalPrice<2000){
+       indirimOrani = 10
+
+   }
+
+   else  if (totalPrice >=2000){
+       indirimOrani = 20
+
+   }
+   indirimliFiyat = totalPrice - (totalPrice * (indirimOrani/100))
+   indimFarki = totalPrice - indirimliFiyat
+
+
+   const  message = `Ürün adı : ${productName}  \n İndirim Oranı : ${indirimOrani} \n indirimli fiyat : ${indirimliFiyat} indirim farkı:${indimFarki}
+   \n toplam ücret : ${totalPrice}
+   `
+   alert(message)
+
+   console.log(typeof productName)
+   console.log(typeof  productPrice)
+   console.log(typeof  productCount)
+
+</script>
+
+</body>
+</html>

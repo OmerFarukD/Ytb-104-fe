@@ -1,0 +1,36 @@
+#button1{
+    color: red;
+    background-color: yellow;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#button1:hover{
+    background-color: red;
+    color: yellow;
+}
+
+#button2:hover{
+    color: yellow;
+    background-color: blueviolet;
+}
+
+#button2{
+    color: blueviolet;
+    background-color: yellow;
+
+}
+
+#button3{
+    color: black;
+    background-color: yellow;
+
+}
+
+#button3:hover{
+    color: yellow;
+    background-color: black;
+}
