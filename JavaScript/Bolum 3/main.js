@@ -26,3 +26,4 @@ const topla = (sayi1,sayi2)=>{
 }
 
 console.log(topla(25,37))
+console.log("Github a yansı")
